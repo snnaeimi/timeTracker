@@ -3,9 +3,12 @@ body{
 }
 
 .Header{
-    color: rgb(50, 46, 40);
+    color: rgb(248, 247, 252);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1rem 0.25rem 2rem rgb(45, 5, 57);
+    padding-top: 0.25rem;
+    
 }
 
 .controls{
@@ -13,60 +16,125 @@ body{
     margin: 1rem;
 }
 
+.topContainer{
+    background-color: blueviolet;
+    height: 12rem;
+    /* border-radius: 2rem; */
+    /* animation-name: example; */
+    /* animation-duration: 20s; */
+    background-image: linear-gradient(rgb(196, 108, 233), rgb(67, 12, 197));
+}
+/* 
+@keyframes example {
+    0%   {background-color: rgb(229, 132, 190);}
+    25%  {background-color: rgb(199, 67, 153);}
+    50%  {background-color: rgb(175, 53, 199);}
+    100% {background-color: rgb(111, 0, 128);}
+  } */
+
 #txtInput{
     width: 30rem;
     height: 2rem;
     margin-bottom: 0rem;
     margin-left: 7rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: blueviolet;
+    padding-left: 1rem;
 }
 
 #startBtn{
     background-color:rgb(231, 158, 32);
-    width: 5rem;
-    height: 2rem;
+    width: 5.5rem;
+    height: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     cursor: pointer;
+    border-radius: 2rem;
+    border: #e18b12;
 }
 
 #startBtn:hover{
-    background-color: rgb(228, 129, 8);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    background-color: #e18b12; 
+    color: rgb(255, 255, 255);
+    border: #e18b12;
 }
 
 #stopBtn{
-    background-color: rgb(239, 15, 15);
-    width: 5rem;
-    height: 2rem;
+    background-color: rgb(237, 68, 68);
+    width: 5.5rem;
+    height: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     cursor: pointer;
+    border: red;
+    border-radius: 2rem;
 }
 
 #stopBtn:hover{
-    background-color: crimson;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    background-color: #e70800; 
+    color: rgb(255, 255, 255);
+    border: #eb0707;
 }
 
 #resetBtn{
     background-color:rgb(170, 206, 156);
-    width: 5rem;
-    height: 2rem;
+    width: 5.5rem;
+    height: 2.5rem;
     font-family: 'Times New Roman', Times, serif;
     font-size: larger;
     cursor: pointer;
+    border-radius: 2rem;
+    border:rgb(170, 206, 156);
 }
 
 #resetBtn:hover{
-    background-color: rgb(134, 154, 104);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+    background-color: #3d9212; 
+    color: rgb(255, 255, 255);
+    border: #3d9212;
 }
 
 .time{
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
     text-align: center;
-    margin-top: 1rem;
+    /* margin-top: 0rem; */
+    color: rgb(94, 0, 171);
+    /* background-color: #cb96e9; */
+    height: 1rem;
+    padding: 1.5rem;
+    text-shadow: 2px 2px #ccc6c6;
 } 
 
 .workList{
     font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+    font-size: larger;
+    color: purple;
+    /* width: 2rem; */
+    /* padding: 2rem; */
 }
+
+ul{
+    margin: 2%;
+    padding-left: 1.5rem;
+}
+
+ul li{
+    list-style-type: circle;
+    cursor:pointer;
+    position: relative;
+    padding: 2px 1px 5px 4px;
+    font-size: 1.5rem; 
+    /* width: 4rem;   */
+}
+
+ul li:hover{
+    background-color:rgb(115, 73, 213);
+    color: rgb(214, 203, 219);
+}
+

@@ -1,22 +1,29 @@
+//get elements
 const timeElement = document.querySelector(".watch .time");
 const startBtn = document.getElementById("startBtn");
 const stopBtn = document.getElementById("stopBtn");
 const resetBtn = document.getElementById("resetBtn");
 
+//initial value
 let seconds = 0;
 let interval = null;
 
+//active clock
 startBtn.addEventListener("click", start);
 stopBtn.addEventListener("click", stop);
 resetBtn.addEventListener("click", reset);
 
+//start button
 function start() {
-  console.log(interval);
+  //Check, if there is an interval, don't do anything
   if (interval) {
     return;
   }
 
+  //get the value of input text
   var taskName = document.getElementById("txtInput").value;
+
+  //Check and give an alert if the input is empty
   if (!taskName) {
     alert("You must write what you want to do?!");
     return;
@@ -25,6 +32,7 @@ function start() {
   interval = setInterval(timer, 1000);
 }
 
+//stop button -- Unlike the start button
 function stop() {
   if (!interval) {
     return;
@@ -36,6 +44,7 @@ function stop() {
     return;
   }
 
+  document.getElementById("txtInput").value = "";
   clearInterval(interval);
   interval = null;
   seconds = 0;
@@ -49,6 +58,7 @@ function stop() {
   list.appendChild(li);
 }
 
+//Timer to calculate time
 function timer() {
   seconds++;
 
@@ -63,6 +73,7 @@ function timer() {
   timeElement.innerText = `${hrs}:${mins}:${secs}`;
 }
 
+//reset button
 function reset() {
   clearInterval(interval);
   interval = null;
