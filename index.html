@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,500&family=Noto+Nastaliq+Urdu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.CSS" />
     <title>MyTimeTracker</title>
     <script src="script.js" defer></script>
@@ -12,31 +15,33 @@
 
 <body>
     <div class="topContainer">
-        <div class="Header">
-            <h1>My TimeTracker</h1>
-        </div>
-        <div>
+            <h1 class="Header">My TimeTracker</h1>
             <input type="text" id="txtInput">
-        </div>
     </div>
 
     <div class="watch">
+        <div class="totalTime">00:00:00</div>
         <div class="time">00:00:00</div>
         <div class="controls">
-            <button id="startBtn">Start</button>
-            <button id="stopBtn">Stop</button>
-            <button id="resetBtn">Reset</button>
+            <button id="startBtn">شروع</button>
+            <button id="stopBtn">توقف</button>
+            <button id="resetBtn">ريست</button>
         </div>
     </div>
 
 
-    <div class="workList">
-        <ul class="list">
-            <li>a</li>
-            <li>b</li>
-            <li>c</li>
+    <!-- <table class="workList">
+        <tr class="list" id="list">
+          <td>a <button class="closeBtn">x</button></td>
+        </tr>
+        <tr>
+            <td>b <button class="closeBtn">x</button></td>
+        </tr>
+    </table> -->
+    <!-- <div class="workList"> -->
+        <ul class="list" id="list" >
         </ul>
-    </div>
+    <!-- </div>
     
 </body>
 
